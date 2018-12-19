@@ -1,0 +1,29 @@
+<div class="sidebar-content">
+  <div class="add-project-container">
+    <h4 class="fl">Browse Projects</h4>
+    <span class="fr">
+        <a href="#" (click)="addProjectClicked()"><mat-icon aria-label="Add Project">add_circle</mat-icon></a>
+    </span>
+  </div>
+  <div class="add-project-form-container" *ngIf="addProjectFlag">
+    <form #addProjectForm="ngForm" (ngSubmit)="addProject(project)">
+      <div class="form-group">
+        <input type="text" [(ngModel)]="project.name" class="form-control" name="projectName" placeholder="Project Name..." #projectName="ngModel">
+      </div>
+      <div class="form-group">
+        <input type="text" [(ngModel)]="project.rate" class="form-control" name="projecRate" placeholder="Rate/hour in USD" #projectRate="ngModel">
+      </div>
+      <div class="form-group">
+          <button type="submit" class="btn btn-success">Add</button>
+      </div>
+    </form>
+  </div>
+  {{diagnostic}}
+  <div class="projects-list-container">
+    <mat-nav-list *ngFor="let project of projects">
+      <!-- <a mat-list-item href="#" class="active"> HelloPro </a>
+      <a mat-list-item href="#"> BricoFer </a> -->
+      <a mat-list-item href="#"> {{project.name}} </a>
+    </mat-nav-list>
+  </div>
+</div>

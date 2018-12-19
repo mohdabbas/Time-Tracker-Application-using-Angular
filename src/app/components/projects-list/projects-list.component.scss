@@ -1,0 +1,21 @@
+.sidebar-content{
+    padding: 15px;
+}
+.add-project-container{
+    overflow: hidden;
+    border-bottom: 1px solid #000;
+    margin-bottom: 15px;
+    mat-icon{
+        font-size: 2em;
+        color: green;
+        margin-right: 10px;
+    }
+}
+.projects-list-container{
+    .active{
+        color: #673ab7;
+    }
+}
+.add-project-form-container{
+    margin-top: 20px;
+}

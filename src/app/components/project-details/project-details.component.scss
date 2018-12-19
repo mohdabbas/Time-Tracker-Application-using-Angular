@@ -1,0 +1,26 @@
+.main-content-container{
+    margin-left: 15px;
+    margin-right: 15px;
+    border-bottom: 1px solid #c3c3c3;
+    .head-container{
+        h1{
+            font-size: 2em;
+        }
+    }
+    .button-container{
+        text-align: right;
+    }
+}
+.timer-container{
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+    font-size: 5em;
+}
+.project-history-container{
+    margin-left: 0px;
+    margin-right: 0px;
+    .totalHours{
+        text-align: right;
+    }
+}
